@@ -79,8 +79,12 @@ CookieConsent.run({
             services: {
                 ga: {
                     label: 'Google Analytics',
-                    onAccept: () => {},
-                    onReject: () => {}
+                    onAccept: () => {
+                        console.log('ga accepted');
+                    },
+                    onReject: () => {
+                        console.log('ga rejected');
+                    }
                 }
             }
         },
