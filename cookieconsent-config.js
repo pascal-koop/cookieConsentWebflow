@@ -16,8 +16,7 @@ CookieConsent.run({
         domain: location.hostname,
         path: '/',
         sameSite: 'Lax',
-        expiresAfterDays: 365,
-        useLocalStorage: true
+        expiresAfterDays: 365
     },
 
     // https://cookieconsent.orestbida.com/reference/configuration-reference.html#guioptions
