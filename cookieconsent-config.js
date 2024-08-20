@@ -5,7 +5,7 @@ import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookiecon
  */
 CookieConsent.run({
     // root: 'body',
-    autoShow: true,
+    //autoShow: true,
     disablePageInteraction: true,
     // hideFromBots: true,
     mode: 'opt-in',
