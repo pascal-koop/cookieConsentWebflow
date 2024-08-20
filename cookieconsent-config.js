@@ -4,7 +4,7 @@ import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookiecon
  * https://cookieconsent.orestbida.com/reference/configuration-reference.html
  */
 CookieConsent.run({
-    // root: 'body',
+    root: 'body',
     //autoShow: true,
     disablePageInteraction: true,
     // hideFromBots: true,
@@ -12,11 +12,12 @@ CookieConsent.run({
     // revision: 0,
 
     cookie: {
-        name: 'cc_cookie'
-        // domain: location.hostname,
-        // path: '/',
-        // sameSite: "Lax",
-        // expiresAfterDays: 365,
+        name: 'cc_cookie',
+        domain: location.hostname,
+        path: '/',
+        sameSite: 'Lax',
+        expiresAfterDays: 365,
+        useLocalStorage: true
     },
 
     // https://cookieconsent.orestbida.com/reference/configuration-reference.html#guioptions
