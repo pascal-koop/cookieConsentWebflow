@@ -8,7 +8,7 @@ CookieConsent.run({
     autoShow: true,
     disablePageInteraction: true,
     // hideFromBots: true,
-    // mode: 'opt-in',
+    mode: 'opt-in',
     // revision: 0,
 
     cookie: {
