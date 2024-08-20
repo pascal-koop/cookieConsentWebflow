@@ -141,11 +141,6 @@ CookieConsent.run({
                                         name: '_ga',
                                         domain: location.hostname,
                                         desc: 'Description 1'
-                                    },
-                                    {
-                                        name: '_gid',
-                                        domain: location.hostname,
-                                        desc: 'Description 2'
                                     }
                                 ]
                             }
