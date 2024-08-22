@@ -90,25 +90,7 @@ CookieConsent.run({
                     }
                 }
             },
-            other: {
-                autoClear: {
-                    cookies: [
-                        {
-                            name: /^_g/ // regex: match all cookies starting with '_gat'
-                        },
-                        {
-                            name: '_gat' // string: exact cookie name
-                        }
-                    ]
-                },
-                services: { gfonts: { label: 'Google Fonts' } },
-                googleFonts: {
-                    label: 'Google Fonts',
-                    onAccept: () => {
-                        console.log('fonts accepted');
-                    }
-                }
-            },
+
             ads: {}
         },
 
