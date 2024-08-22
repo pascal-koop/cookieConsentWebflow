@@ -88,17 +88,17 @@ CookieConsent.run({
                             console.log('ga rejected');
                         }
                     }
-                }
-            },
-            ads: {},
-            otherServices: {
-                ga: {
-                    label: 'Google Fonts',
-                    onAccept: () => {
-                        console.log('fonts accepted');
+                },
+                otherServices: {
+                    ga: {
+                        label: 'Google Fonts',
+                        onAccept: () => {
+                            console.log('fonts accepted');
+                        }
                     }
                 }
-            }
+            },
+            ads: {}
         },
 
         language: {
