@@ -126,7 +126,7 @@ CookieConsent.run({
                     sections: [
                         {
                             title: 'Ihre Datenschutzeinstellungen',
-                            description: `In diesem Bereich können Sie einige Präferenzen in Bezug auf die Verarbeitung Ihrer persönlichen Daten angeben. Sie können die von Ihnen getroffenen Entscheidungen jederzeit überprüfen und ändern, indem Sie dieses Feld über den angegebenen Link erneut aufrufen. Um Ihre Zustimmung zu den unten beschriebenen Verarbeitungsaktivitäten zu verweigern, schalten Sie die Kippschalter aus oder verwenden Sie die Schaltfläche „Alle ablehnen“ und bestätigen Sie, dass Sie Ihre Auswahl speichern möchten. Übersetzt mit DeepL.com (kostenlose Version)`
+                            description: `In diesem Bereich können Sie einige Präferenzen in Bezug auf die Verarbeitung Ihrer persönlichen Daten angeben. Sie können die von Ihnen getroffenen Entscheidungen jederzeit überprüfen und ändern, indem Sie dieses Feld über den angegebenen Link erneut aufrufen. Um Ihre Zustimmung zu den unten beschriebenen Verarbeitungsaktivitäten zu verweigern, schalten Sie die Kippschalter aus oder verwenden Sie die Schaltfläche „Alle ablehnen“ und bestätigen Sie, dass Sie Ihre Auswahl speichern möchten.`
                         },
                         {
                             title: 'Unbedingt erforderlich',
