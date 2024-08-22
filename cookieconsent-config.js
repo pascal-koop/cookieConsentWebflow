@@ -149,27 +149,7 @@ CookieConsent.run({
                                 //this field will generate a toggle linked to the 'necessary' category
                                 linkedCategory: 'necessary'
                             },
-                            {
-                                title: 'Funktionell',
-                                description:
-                                    'Diese Cookies Sammeln keine Bestimmten Daten können aber von Google Analytics erfasst werden',
-                                linkedCategory: 'other',
-                                cookieTable: {
-                                    caption: 'Cookie Tabelle',
-                                    headers: {
-                                        name: 'Cookie',
-                                        domain: 'Domain',
-                                        desc: 'Description'
-                                    },
-                                    body: [
-                                        {
-                                            name: '_ga',
-                                            domain: location.hostname,
-                                            desc: 'Description 2'
-                                        }
-                                    ]
-                                }
-                            },
+
                             {
                                 title: 'Performance und Analyse',
                                 description:
