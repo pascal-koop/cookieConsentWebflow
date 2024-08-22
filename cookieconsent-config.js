@@ -64,9 +64,7 @@ CookieConsent.run({
         necessary: {
             enabled: true, // this category is enabled by default
             readOnly: true, // this category cannot be
-            googleFonts: {
-                label: 'Google Fonts'
-            },
+
             analytics: {
                 autoClear: {
                     cookies: [
@@ -92,7 +90,15 @@ CookieConsent.run({
                     }
                 }
             },
-            ads: {}
+            ads: {},
+            otherServices: {
+                ga: {
+                    label: 'Google Fonts',
+                    onAccept: () => {
+                        console.log('fonts accepted');
+                    }
+                }
+            }
         },
 
         language: {
@@ -131,6 +137,12 @@ CookieConsent.run({
 
                                 //this field will generate a toggle linked to the 'necessary' category
                                 linkedCategory: 'necessary'
+                            },
+                            {
+                                title: 'Funktionell',
+                                description:
+                                    'Diese Cookies Sammeln keine Bestimmten Daten können aber von Google Analytics erfasst werden',
+                                linkedCategory: 'otherServices'
                             },
                             {
                                 title: 'Performance und Analyse',
