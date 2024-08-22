@@ -88,13 +88,24 @@ CookieConsent.run({
                             console.log('ga rejected');
                         }
                     }
-                },
-                otherServices: {
-                    ga: {
-                        label: 'Google Fonts',
-                        onAccept: () => {
-                            console.log('fonts accepted');
+                }
+            },
+            other: {
+                autoClear: {
+                    cookies: [
+                        {
+                            name: /^_g/ // regex: match all cookies starting with '_gat'
+                        },
+                        {
+                            name: '_gat' // string: exact cookie name
                         }
+                    ]
+                },
+                services: { gfonts: { label: 'Google Fonts' } },
+                googleFonts: {
+                    label: 'Google Fonts',
+                    onAccept: () => {
+                        console.log('fonts accepted');
                     }
                 }
             },
@@ -142,7 +153,22 @@ CookieConsent.run({
                                 title: 'Funktionell',
                                 description:
                                     'Diese Cookies Sammeln keine Bestimmten Daten können aber von Google Analytics erfasst werden',
-                                linkedCategory: 'otherServices'
+                                linkedCategory: 'other',
+                                cookieTable: {
+                                    caption: 'Cookie Tabelle',
+                                    headers: {
+                                        name: 'Cookie',
+                                        domain: 'Domain',
+                                        desc: 'Description'
+                                    },
+                                    body: [
+                                        {
+                                            name: '_ga',
+                                            domain: location.hostname,
+                                            desc: 'Description 2'
+                                        }
+                                    ]
+                                }
                             },
                             {
                                 title: 'Performance und Analyse',
